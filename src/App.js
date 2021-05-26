@@ -12,11 +12,11 @@ function App() {
       isCompleted: false,
       editMode: false
     },
-    { text: "Meet friend for lunch",
+    { text: "Learn about React Hooks",
       isCompleted: false,
       editMode: false
     },
-    { text: "Build really cool todo app",
+    { text: "Build the todo app",
       isCompleted: false,
       editMode: false
     }])

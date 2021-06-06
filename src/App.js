@@ -12,6 +12,8 @@ function App() {
 
     const [showTodoForm, setShowTodoForm] = useState(false);
 
+    const todos = useSelector((state) => state.todos);
+
     // useEffect(() => {
       // setTodos(todos);
     // }, []);

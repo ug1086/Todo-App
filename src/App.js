@@ -9,14 +9,12 @@ import { editTodoAction, completeTodoAction, removeTodoAction } from './redux/to
 
 function App() {
   
-    const todos = useSelector((state) => state.todos)
 
     const [showTodoForm, setShowTodoForm] = useState(false);
 
     // useEffect(() => {
       // setTodos(todos);
-    // }, []); 
-
+    // }, []);
 
   return (
     <div className="app">

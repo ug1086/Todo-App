@@ -47,7 +47,7 @@ function Todo({todo, completeTodoAction, removeTodoAction, editTodoAction, setSh
 
   return (
     <div className="todo">
-      {(editmode===true) ? <form className="editForm" onSubmit={handleSubmit}><input type="text" className="input" value={value} onChange={(e) => setValue(e.target.value)}/></form> : <p style={{ textDecoration: todo.isCompleted ? "line-through" : "", float: "left" }}>{todo.text}</p>}
+      {(editmode===true) ? <form className="editForm" onSubmit={handleSubmit}><input type="text" className="input form-control" value={value} onChange={(e) => setValue(e.target.value)}/></form> : <p style={{ textDecoration: todo.isCompleted ? "line-through" : "", float: "left" }}>{todo.text}</p>}
       <div className="buttonWrap">
       {(editmode===false) ? <button className="btn" onClick={toggleinput}><i className="fa fa-pencil" aria-hidden="true"></i></button> : "" }
         <button style={{marginRight: "5px"}} className="btn btn-sm btn-info" onClick={() => completeTodo()}>Complete</button>
